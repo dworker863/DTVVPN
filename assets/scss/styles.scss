@@ -1,7 +1,28 @@
 @import 'fonts';
+@import 'vars';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 body {
   font-family: Gilroy, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
   background-image: url(../images/bg.png);
 }
 
@@ -12,10 +33,41 @@ body {
 
 .content {
   position: relative;
+  display: flex;
+  gap: 95px;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .phone {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
+  height: 100%;
+}
+
+.content-title {
+  font-size: 48px;
+  color: $color-primary;
+}
+
+.needs-item {
+  position: relative;
+  margin-left: 18px;
+  margin-bottom: 35px;
+  height: 100%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    width: 5px;
+    height: inherit;
+    background-color: $color-secondary;
+  }
+}
+
+.needs-item,
+.vpn-text {
+  font-size: 24px;
 }

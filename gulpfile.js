@@ -18,10 +18,7 @@ function html() {
 
 function styles() {
   return gulp
-    .src([
-      './assets/libs/owlCarousel/dist/assets/owl.carousel.min.css',
-      './assets/scss/**/*.scss',
-    ])
+    .src(['./assets/scss/**/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(concat('styles.min.css'))
@@ -31,20 +28,15 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-function scripts() {
-  return gulp
-    .src([
-      './assets/libs/jquery/dist/jquery.slim.min.js',
-      './assets/libs/owlCarousel/dist/owl.carousel.min.js',
-      './assets/libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-      './assets/js/common.js',
-    ])
-    .pipe(sourcemaps.init())
-    .pipe(concat('scripts.min.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('assets/js'))
-    .pipe(browserSync.stream());
-}
+// function scripts() {
+//   return gulp
+//     .src(['./assets/js/common.js'])
+//     .pipe(sourcemaps.init())
+//     .pipe(concat('scripts.min.js'))
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('assets/js'))
+//     .pipe(browserSync.stream());
+// }
 
 function watch() {
   browserSync.init({
@@ -55,7 +47,7 @@ function watch() {
 
   gulp.watch('assets/**/*.html').on('change', browserSync.reload);
   gulp.watch('assets/scss/**/*.scss', gulp.series(styles));
-  gulp.watch('assets/js/common.js', gulp.series(scripts));
+  // gulp.watch('assets/js/common.js', gulp.series(scripts));
 }
 
 function clear() {
@@ -65,7 +57,7 @@ function clear() {
 function build(done) {
   gulp.src('assets/css/styles.min.css').pipe(gulp.dest('dist/css'));
 
-  gulp.src('assets/js/scripts.min.js').pipe(gulp.dest('dist/js'));
+  // gulp.src('assets/js/scripts.min.js').pipe(gulp.dest('dist/js'));
 
   gulp.src('assets/fonts/**').pipe(gulp.dest('dist/fonts'));
 
@@ -76,5 +68,5 @@ function build(done) {
   done();
 }
 
-exports.default = gulp.series(gulp.parallel(styles, scripts), watch);
-exports.build = gulp.series(gulp.parallel(styles, scripts), clear, html, build);
+exports.default = gulp.series(gulp.parallel(styles), watch);
+exports.build = gulp.series(gulp.parallel(styles), clear, html, build);
