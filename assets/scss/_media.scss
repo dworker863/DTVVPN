@@ -1,0 +1,127 @@
+@media (max-width: 1680px) {
+  .content-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .needs-item,
+  .vpn-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1140px;
+  }
+
+  .payment-text {
+    display: none;
+  }
+
+  .copyrights {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+
+  .content-title {
+    font-size: 28px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 18px;
+  }
+
+  .qiwi {
+    height: 70px;
+  }
+
+  .card {
+    height: 48px;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+
+  .footer-item img {
+    width: 80px;
+  }
+
+  .footer-item__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-height: 760px) {
+  .content-title {
+    font-size: 24px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 20px;
+  }
+
+  .qiwi {
+    height: 70px;
+  }
+
+  .card {
+    height: 48px;
+  }
+
+  .payment-text {
+    display: none;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-height: 660px) {
+  .content-title {
+    font-size: 20px;
+  }
+
+  .content {
+    justify-content: flex-start;
+  }
+
+  .needs {
+    margin-top: -10px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 16px;
+  }
+
+  .payment {
+    justify-content: flex-start;
+  }
+
+  .qiwi {
+    margin-right: 80px;
+  }
+
+  .footer-item img {
+    width: 80px;
+  }
+
+  .footer-item__text {
+    font-size: 16px;
+  }
+
+  .copyrights {
+    margin-bottom: 150px;
+  }
+}

@@ -28,6 +28,8 @@ body {
   font-weight: 700;
   color: #fff;
   background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -57,7 +59,7 @@ body {
 }
 
 .needs {
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .needs-item {
@@ -141,3 +143,5 @@ h3 {
   text-align: center;
   font-size: 18px;
 }
+
+@import 'media';
