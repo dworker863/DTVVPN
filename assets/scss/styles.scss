@@ -1,0 +1,21 @@
+@import 'fonts';
+
+body {
+  font-family: Gilroy, serif;
+  background-image: url(../images/bg.png);
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+}
+
+.phone {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
