@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+a {
+  color: #fff;
+}
+
 body {
   font-family: Gilroy, serif;
   font-size: 24px;
@@ -37,6 +41,7 @@ body {
   gap: 95px;
   justify-content: space-between;
   height: 100vh;
+  margin-bottom: 105px;
 }
 
 .phone {
@@ -103,4 +108,36 @@ h3 {
   margin-top: 0;
   margin-bottom: 20px;
   color: $color-secondary;
+}
+
+.footer {
+  padding-top: 35px;
+  border-top: 1px solid $color-primary;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.footer-item {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+
+  img {
+    margin-right: 25px;
+  }
+}
+
+.footer-item__text {
+  margin: 0;
+}
+
+.copyrights {
+  display: block;
+  margin-bottom: 250px;
+  text-align: center;
+  font-size: 18px;
 }
