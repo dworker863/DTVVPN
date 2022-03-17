@@ -47,8 +47,12 @@ body {
 }
 
 .content-title {
-  font-size: 48px;
+  font-size: 36px;
   color: $color-primary;
+}
+
+.needs {
+  margin-top: -20px;
 }
 
 .needs-item {
@@ -76,4 +80,27 @@ body {
   width: 250px;
   height: 5px;
   background-color: $color-secondary;
+}
+
+.payment,
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-wrapper {
+  flex-wrap: nowrap;
+}
+
+.card {
+  margin-right: 20px;
+}
+
+h3 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $color-secondary;
 }
