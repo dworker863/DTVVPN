@@ -43,7 +43,8 @@ body {
   gap: 95px;
   height: 100vh;
   margin-bottom: 105px;
-  padding-top: 240px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 180px;
 }
 
@@ -66,7 +67,20 @@ body {
 }
 
 .phone-text__item {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 12px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: $color-green;
+  }
 }
 
 .phone {
