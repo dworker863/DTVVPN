@@ -56,6 +56,12 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .container {
+    width: 1140px;
+  }
+}
+
 @media (max-height: 900px) {
   .content-title {
     font-size: 24px;
@@ -76,6 +82,92 @@
 
   h3 {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-height: 884px) {
+  .phone-text {
+    left: 70px;
+  }
+
+  .phone-button {
+    bottom: 80px;
+  }
+
+  .qiwi {
+    width: 180px;
+  }
+
+  .card {
+    width: 70px;
+  }
+}
+
+@media (max-height: 760px) {
+  .content {
+    padding-left: 250px;
+  }
+
+  .phone-text {
+    left: 40px;
+  }
+
+  .content-title {
+    font-size: 20px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 16px;
+  }
+
+  .payment {
+    width: 450px;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .qiwi {
+    width: 100px;
+  }
+
+  .card {
+    width: 40px;
+  }
+
+  .footer-item {
+    font-size: 18px;
+
+    img {
+      width: 70px;
+    }
+  }
+}
+
+@media (max-height: 660px) {
+  .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+  }
+
+  .phone-text {
+    left: 35px;
+  }
+
+  .phone-button {
+    bottom: 60px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 14px;
+  }
+
+  .payment {
+    width: 480px;
   }
 }
 
@@ -142,5 +234,62 @@
 
   .copyrights {
     margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+
+  .content {
+    padding-left: 50px;
+  }
+
+  .phone-text {
+    left: 40px;
+  }
+
+  .content-title {
+    font-size: 20px;
+  }
+
+  .needs-item,
+  .vpn-text {
+    font-size: 16px;
+  }
+
+  .payment {
+    width: 450px;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .qiwi {
+    width: 120px;
+  }
+
+  .card {
+    width: 50px;
+  }
+
+  .footer-list {
+    margin-left: 20px;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .footer-item {
+    font-size: 18px;
+
+    img {
+      width: 60px;
+    }
+  }
+
+  .copyrights {
+    margin-left: 60px;
   }
 }
