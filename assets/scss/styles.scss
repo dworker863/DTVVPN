@@ -90,13 +90,26 @@ body {
   height: 100%;
 }
 
+.phone-button {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+
+  img {
+    width: 240px;
+  }
+}
+
 .content-title {
   font-size: 24px;
   color: $color-primary;
 }
 
 .needs {
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 .needs-item {
