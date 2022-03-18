@@ -47,6 +47,28 @@ body {
   padding-left: 180px;
 }
 
+.phone-wrapper {
+  position: relative;
+}
+
+.phone-title {
+  font-size: 28px;
+  color: $color-green;
+}
+
+.phone-text {
+  z-index: 10;
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  text-align: center;
+  color: $color-black;
+}
+
+.phone-text__item {
+  font-size: 12px;
+}
+
 .phone {
   position: relative;
   top: 0;
