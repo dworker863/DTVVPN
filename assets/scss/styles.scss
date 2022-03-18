@@ -41,9 +41,10 @@ body {
   position: relative;
   display: flex;
   gap: 95px;
-  justify-content: space-between;
   height: 100vh;
   margin-bottom: 105px;
+  padding-top: 240px;
+  padding-left: 180px;
 }
 
 .phone {
@@ -54,7 +55,7 @@ body {
 }
 
 .content-title {
-  font-size: 36px;
+  font-size: 24px;
   color: $color-primary;
 }
 
@@ -65,7 +66,7 @@ body {
 .needs-item {
   position: relative;
   margin-left: 18px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   height: 100%;
 
   &:before {
@@ -80,7 +81,11 @@ body {
 
 .needs-item,
 .vpn-text {
-  font-size: 24px;
+  font-size: 18px;
+}
+
+.vpn-text {
+  max-width: 490px;
 }
 
 .yellow-line {
@@ -97,6 +102,26 @@ body {
   align-items: center;
 }
 
+.payment {
+  width: 580px;
+}
+
+.payment-text {
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+.qiwi {
+  width: 150px;
+}
+
+.card {
+  width: 60px;
+}
+
 .card-wrapper {
   flex-wrap: nowrap;
 }
@@ -108,7 +133,7 @@ body {
 h3 {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: $color-secondary;
 }
 
