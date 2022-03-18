@@ -440,6 +440,15 @@
     width: 100%;
   }
 
+  .content {
+    padding-top: 0;
+    gap: initial;
+  }
+
+  .phone-wrapper {
+    height: auto;
+  }
+
   .phone {
     width: 320px;
     height: auto;
@@ -455,7 +464,7 @@
   }
 
   .phone-button {
-    bottom: 120px;
+    top: 505px;
   }
 
   .content-title {
@@ -527,5 +536,13 @@
   .copyrights {
     font-size: 16px;
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-item {
+    &:first-child {
+      transform: translateX(-55%);
+    }
   }
 }
