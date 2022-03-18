@@ -42,10 +42,9 @@ body {
   display: flex;
   gap: 95px;
   height: 100vh;
-  margin-bottom: 105px;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 180px;
+  padding-left: 150px;
 }
 
 .phone-wrapper {
@@ -152,7 +151,7 @@ body {
 }
 
 .payment {
-  width: 580px;
+  width: 500px;
 }
 
 .payment-text {
@@ -182,7 +181,7 @@ body {
 h3 {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   color: $color-secondary;
 }
 
@@ -213,7 +212,7 @@ h3 {
 
 .copyrights {
   display: block;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
   text-align: center;
   font-size: 18px;
 }
